@@ -1,25 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Outlet, Link, useRoutes, useParams } from 'react-router-dom'
+import TarikaGlue from './TarikaGlue/TarikaGlue'
+
+export default function App() {
+  let routes = [
+    {
+      path: '/',
+      element: <Layout />,
+      children: [
+        { index: true, element: <Home /> },
+        {
+          path: '/tickets',
+          element: <TarikaGlue />,
+        },
+        {
+          path: '/projects',
+          element: <TarikaGlue />,
+        },
+        {
+          path: '/workorders',
+          element: <TarikaGlue />,
+        },
+        {
+          path: '/invoices',
+          element: <TarikaGlue />,
+        },
+        { path: '*', element: <NoMatch /> },
+      ],
+    },
+  ]
+
+  // The useRoutes() hook allows you to define your routes as JavaScript objects
+  // instead of <Routes> and <Route> elements. This is really just a style
+  // preference for those who prefer to not use JSX for their routes config.
+  let element = useRoutes(routes)
+
+  return <>{element}</>
 }
 
-export default App;
+function Layout() {
+  return (
+    <>
+      {/* <TarikaSideBar /> */}
+
+      <Outlet />
+    </>
+  )
+}
+
+function Home() {
+  // return <h3>HOLA</h3>
+  return <TarikaGlue />
+}
+
+function NoMatch() {
+  return (
+    <div>
+      <h2>It looks like you're lost...</h2>
+      <p>
+        <Link to="/">Go to the home page</Link>
+      </p>
+    </div>
+  )
+}
