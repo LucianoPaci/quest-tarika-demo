@@ -21,35 +21,26 @@ const TarikaTopBar1 = styled("div")({
   position: `relative`,  
   isolation: `isolate`,  
   flexDirection: `column`,  
-  justifyContent: `flex-start`,  
+  height: `76px`,  
+  width: "100%",  
+  justifyContent: `center`,  
   alignItems: `flex-start`,  
   padding: `0px`,  
   boxSizing: `border-box`,  
-  width: "100%",  
 });
   
 const TopBar = styled("div")({  
+  backgroundColor: `rgba(255, 255, 255, 1)`,  
+  boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.05)`,  
   display: `flex`,  
   position: `relative`,  
   isolation: `isolate`,  
   flexDirection: `row`,  
   justifyContent: `flex-start`,  
   alignItems: `flex-start`,  
-  padding: `0px`,  
+  padding: `26px 10px`,  
   boxSizing: `border-box`,  
-  height: `76px`,  
-  width: `1919px`,  
   margin: `0px`,  
-});
-  
-const Rectangle17011 = styled("div")({  
-  backgroundColor: `rgba(255, 255, 255, 1)`,  
-  boxShadow: `0px 4px 4px rgba(0, 0, 0, 0.05)`,  
-  width: `1919px`,  
-  height: `76px`,  
-  position: `absolute`,  
-  left: `0px`,  
-  top: `0px`,  
 });
   
 const WorkOrders = styled("div")({  
@@ -64,17 +55,13 @@ const WorkOrders = styled("div")({
   textDecoration: `none`,  
   textTransform: `none`,  
   width: `108.17px`,  
-  position: `absolute`,  
-  left: `369px`,  
-  top: `26px`,  
+  margin: `0px`,  
 });
  
 function TarikaTopBar(props) {
   return (
     <TarikaTopBar1 className={props.className} >
       <TopBar >
-        <Rectangle17011 >
-        </Rectangle17011>
         <WorkOrders >
           {`Work Orders`}
             </WorkOrders>

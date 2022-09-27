@@ -12,13 +12,13 @@
 *
 **********************************************************************/
 
-import VectorImage from './assets/images/tarikafilters_Vector_5.png';
-import Vector1Image from './assets/images/tarikafilters_Vector_4.png';
-import Vector2Image from './assets/images/tarikafilters_Vector_3.png';
-import Vector3Image from './assets/images/tarikafilters_Vector_2.png';
-import Vector4Image from './assets/images/tarikafilters_Vector_1.png';
+import VectorImage from './assets/images/tarikafilters_Vector_3.png';
+import Vector1Image from './assets/images/tarikafilters_Vector_2.png';
+import CalendarImage from './assets/images/tarikafilters_Calendar.png';
+import Vector2Image from './assets/images/tarikafilters_Vector_1.png';
+import ResetButtonImage from './assets/images/tarikafilters_Reset_Button.png';
 import Rectangle17157Image from './assets/images/tarikafilters_Rectangle_17157.png';
-import Vector5Image from './assets/images/tarikafilters_Vector.png';
+import Vector3Image from './assets/images/tarikafilters_Vector.png';
 import { styled } from '@mui/material/styles';
 
  
@@ -30,7 +30,7 @@ const TarikaFilters1 = styled("div")({
   flexDirection: `column`,  
   justifyContent: `flex-start`,  
   alignItems: `flex-start`,  
-  padding: `0px 38px`,  
+  padding: `0px 5px`,  
   boxSizing: `border-box`,  
   width: "100%",  
 });
@@ -41,50 +41,49 @@ const TopFiltersAnotherOpt = styled("div")({
   isolation: `isolate`,  
   flexDirection: `row`,  
   justifyContent: `flex-start`,  
-  alignItems: `flex-start`,  
+  alignItems: `center`,  
   padding: `0px`,  
   boxSizing: `border-box`,  
-  height: `33px`,  
-  width: `1510px`,  
+  width: `1508.31px`,  
+  margin: `0px`,  
+});
+  
+const Frame2 = styled("div")({  
+  display: `flex`,  
+  position: `relative`,  
+  isolation: `isolate`,  
+  flexDirection: `row`,  
+  justifyContent: `flex-start`,  
+  alignItems: `center`,  
+  padding: `0px`,  
+  boxSizing: `border-box`,  
+  width: `1093px`,  
+  height: `25px`,  
   margin: `0px`,  
 });
   
 const Filters = styled("div")({  
   display: `flex`,  
-  position: `absolute`,  
+  position: `relative`,  
   isolation: `isolate`,  
   flexDirection: `row`,  
   justifyContent: `flex-start`,  
   alignItems: `flex-start`,  
-  padding: `0px`,  
+  padding: `0px 5px`,  
   boxSizing: `border-box`,  
-  width: `191.31px`,  
-  height: `7px`,  
-  left: `0px`,  
-  top: `14px`,  
+  margin: `0px`,  
 });
   
-const Status = styled("div")({  
+const Frame7 = styled("div")({  
   display: `flex`,  
-  position: `absolute`,  
+  position: `relative`,  
   isolation: `isolate`,  
   flexDirection: `row`,  
   justifyContent: `flex-start`,  
   alignItems: `flex-start`,  
-  padding: `0px`,  
+  padding: `0px 5px`,  
   boxSizing: `border-box`,  
-  width: `79.13px`,  
-  height: `7px`,  
-  left: `0px`,  
-  top: `0px`,  
-});
-  
-const Vector = styled("img")({  
-  height: `7px`,  
-  width: `10.02px`,  
-  position: `absolute`,  
-  left: `89px`,  
-  top: `7px`,  
+  margin: `0px`,  
 });
   
 const StatusAll = styled("div")({  
@@ -99,32 +98,25 @@ const StatusAll = styled("div")({
   textDecoration: `none`,  
   textTransform: `none`,  
   width: `61.1px`,  
-  position: `absolute`,  
-  left: `0px`,  
-  top: `1px`,  
+  margin: `0px`,  
 });
   
-const SearchBy = styled("div")({  
+const Vector = styled("img")({  
+  height: `7px`,  
+  width: `10.02px`,  
+  margin: `0px 0px 0px 10px`,  
+});
+  
+const Frame6 = styled("div")({  
   display: `flex`,  
-  position: `absolute`,  
+  position: `relative`,  
   isolation: `isolate`,  
   flexDirection: `row`,  
   justifyContent: `flex-start`,  
   alignItems: `flex-start`,  
-  padding: `0px`,  
+  padding: `0px 5px`,  
   boxSizing: `border-box`,  
-  width: `102.17px`,  
-  height: `7px`,  
-  left: `89px`,  
-  top: `0px`,  
-});
-  
-const Vector1 = styled("img")({  
-  height: `7px`,  
-  width: `10.02px`,  
-  position: `absolute`,  
-  left: `112px`,  
-  top: `7px`,  
+  margin: `0px 0px 0px 5px`,  
 });
   
 const SearchByAll = styled("div")({  
@@ -139,113 +131,24 @@ const SearchByAll = styled("div")({
   textDecoration: `none`,  
   textTransform: `none`,  
   width: `83.14px`,  
-  position: `absolute`,  
-  left: `0px`,  
-  top: `1px`,  
+  margin: `0px`,  
 });
   
-const Calendar = styled("div")({  
-  display: `flex`,  
-  position: `absolute`,  
-  isolation: `isolate`,  
-  flexDirection: `row`,  
-  justifyContent: `flex-start`,  
-  alignItems: `flex-start`,  
-  padding: `0px`,  
-  boxSizing: `border-box`,  
-  width: `41px`,  
-  height: `33px`,  
-  left: `209px`,  
-  top: `0px`,  
-});
-  
-const Rectangle17155 = styled("div")({  
-  border: `0.30000001192092896px solid rgba(0, 0, 0, 1)`,  
-  boxSizing: `border-box`,  
-  borderRadius: `5px`,  
-  width: `41px`,  
-  height: `33px`,  
-  position: `absolute`,  
-  left: `0px`,  
-  top: `0px`,  
-});
-  
-const Vector2 = styled("img")({  
-  height: `19.97px`,  
-  width: `17.47px`,  
-  position: `absolute`,  
-  left: `12px`,  
-  top: `7px`,  
-});
-  
-const Legends = styled("div")({  
-  display: `flex`,  
-  position: `absolute`,  
-  isolation: `isolate`,  
-  flexDirection: `row`,  
-  justifyContent: `flex-start`,  
-  alignItems: `flex-start`,  
-  padding: `0px`,  
-  boxSizing: `border-box`,  
-  width: `97px`,  
-  height: `33px`,  
-  left: `1413px`,  
-  top: `0px`,  
-});
-  
-const Rectangle171551 = styled("div")({  
-  border: `0.30000001192092896px solid rgba(0, 0, 0, 1)`,  
-  boxSizing: `border-box`,  
-  borderRadius: `5px`,  
-  width: `97px`,  
-  height: `33px`,  
-  position: `absolute`,  
-  left: `0px`,  
-  top: `0px`,  
-});
-  
-const Group7279 = styled("div")({  
-  display: `flex`,  
-  position: `absolute`,  
-  isolation: `isolate`,  
-  flexDirection: `row`,  
-  justifyContent: `flex-start`,  
-  alignItems: `flex-start`,  
-  padding: `0px`,  
-  boxSizing: `border-box`,  
-  width: `65.7px`,  
+const Vector1 = styled("img")({  
   height: `7px`,  
-  left: `16px`,  
-  top: `13px`,  
+  width: `10.02px`,  
+  margin: `0px 0px 0px 10px`,  
 });
   
-const Legend = styled("div")({  
-  textAlign: `left`,  
-  whiteSpace: `pre-wrap`,  
-  color: `rgba(0, 0, 0, 1)`,  
-  fontStyle: `normal`,  
-  fontFamily: `Segoe UI`,  
-  fontWeight: `400`,  
-  fontSize: `14px`,  
-  letterSpacing: `0px`,  
-  textDecoration: `none`,  
-  textTransform: `none`,  
-  position: `absolute`,  
-  left: `0px`,  
-  top: `2px`,  
-});
-  
-const Vector3 = styled("img")({  
-  height: `7px`,  
-  width: `11.62px`,  
-  position: `absolute`,  
-  left: `77px`,  
-  top: `7px`,  
+const Calendar = styled("img")({  
+  height: `33px`,  
+  width: `41px`,  
+  margin: `0px 0px 0px 5px`,  
 });
   
 const SearchBar = styled("div")({  
   display: `flex`,  
-  position: `absolute`,  
+  position: `relative`,  
   isolation: `isolate`,  
   flexDirection: `row`,  
   justifyContent: `flex-start`,  
@@ -254,11 +157,10 @@ const SearchBar = styled("div")({
   boxSizing: `border-box`,  
   width: `579px`,  
   height: `33px`,  
-  left: `270px`,  
-  top: `0px`,  
+  margin: `0px 0px 0px 5px`,  
 });
   
-const Rectangle171552 = styled("div")({  
+const Rectangle17155 = styled("div")({  
   border: `0.5px solid rgba(0, 0, 0, 1)`,  
   boxSizing: `border-box`,  
   borderRadius: `5px`,  
@@ -310,7 +212,7 @@ const Rectangle17156 = styled("div")({
   top: `0px`,  
 });
   
-const Vector4 = styled("img")({  
+const Vector2 = styled("img")({  
   height: `12.52px`,  
   width: `12.52px`,  
   position: `absolute`,  
@@ -318,30 +220,58 @@ const Vector4 = styled("img")({
   top: `5px`,  
 });
   
-const GroupingByMonths = styled("div")({  
+const ResetButton = styled("img")({  
+  height: `33px`,  
+  width: `41px`,  
+  margin: `0px 0px 0px 5px`,  
+});
+  
+const Frame1 = styled("div")({  
   display: `flex`,  
-  position: `absolute`,  
+  position: `relative`,  
   isolation: `isolate`,  
   flexDirection: `row`,  
   justifyContent: `flex-start`,  
-  alignItems: `flex-start`,  
+  alignItems: `center`,  
   padding: `0px`,  
   boxSizing: `border-box`,  
-  width: `154px`,  
-  height: `19px`,  
-  left: `1239px`,  
-  top: `9px`,  
+  width: `334px`,  
+  height: `29px`,  
+  margin: `0px 0px 0px 81px`,  
+});
+  
+const Frame3 = styled("div")({  
+  display: `flex`,  
+  position: `relative`,  
+  isolation: `isolate`,  
+  flexDirection: `row`,  
+  justifyContent: `flex-start`,  
+  alignItems: `center`,  
+  padding: `0px 20px`,  
+  boxSizing: `border-box`,  
+  flexGrow: `1`,  
+  margin: `0px`,  
+});
+  
+const Frame4 = styled("div")({  
+  display: `flex`,  
+  position: `relative`,  
+  isolation: `isolate`,  
+  flexDirection: `row`,  
+  justifyContent: `flex-start`,  
+  alignItems: `center`,  
+  padding: `0px`,  
+  boxSizing: `border-box`,  
+  margin: `0px`,  
 });
   
 const Rectangle17157 = styled("img")({  
   height: `16px`,  
-  width: `16px`,  
-  position: `absolute`,  
-  left: `0px`,  
-  top: `3px`,  
+  width: `19.11px`,  
+  margin: `0px`,  
 });
   
-const GroupingByMonths1 = styled("div")({  
+const GroupingByMonths = styled("div")({  
   textAlign: `right`,  
   whiteSpace: `pre-wrap`,  
   color: `rgba(0, 0, 0, 1)`,  
@@ -352,135 +282,93 @@ const GroupingByMonths1 = styled("div")({
   letterSpacing: `0px`,  
   textDecoration: `none`,  
   textTransform: `none`,  
-  position: `absolute`,  
-  left: `25px`,  
-  top: `0px`,  
+  width: `154.57px`,  
+  margin: `0px`,  
 });
   
-const ResetButton = styled("div")({  
+const Frame5 = styled("div")({  
   display: `flex`,  
-  position: `absolute`,  
+  position: `relative`,  
   isolation: `isolate`,  
   flexDirection: `row`,  
   justifyContent: `flex-start`,  
-  alignItems: `flex-start`,  
+  alignItems: `center`,  
   padding: `0px`,  
   boxSizing: `border-box`,  
-  width: `41px`,  
-  height: `33px`,  
-  left: `869px`,  
-  top: `0px`,  
+  margin: `0px 0px 0px 10px`,  
 });
   
-const Calendar1 = styled("div")({  
-  display: `flex`,  
-  position: `absolute`,  
-  isolation: `isolate`,  
-  flexDirection: `row`,  
-  justifyContent: `flex-start`,  
-  alignItems: `flex-start`,  
-  padding: `0px`,  
-  boxSizing: `border-box`,  
-  width: `41px`,  
-  height: `33px`,  
-  left: `0px`,  
-  top: `0px`,  
+const Legend = styled("div")({  
+  textAlign: `left`,  
+  whiteSpace: `pre-wrap`,  
+  color: `rgba(0, 0, 0, 1)`,  
+  fontStyle: `normal`,  
+  fontFamily: `Segoe UI`,  
+  fontWeight: `400`,  
+  fontSize: `14px`,  
+  letterSpacing: `0px`,  
+  textDecoration: `none`,  
+  textTransform: `none`,  
+  width: `73.27px`,  
+  margin: `0px`,  
 });
   
-const Rectangle171553 = styled("div")({  
-  border: `0.5px solid rgba(0, 0, 0, 1)`,  
-  boxSizing: `border-box`,  
-  borderRadius: `5px`,  
-  width: `41px`,  
-  height: `33px`,  
-  position: `absolute`,  
-  left: `0px`,  
-  top: `0px`,  
-});
-  
-const IconAlternateRedo = styled("div")({  
-  display: `flex`,  
-  position: `absolute`,  
-  isolation: `isolate`,  
-  flexDirection: `row`,  
-  justifyContent: `flex-start`,  
-  alignItems: `flex-start`,  
-  padding: `0px`,  
-  boxSizing: `border-box`,  
-  width: `17.1px`,  
-  height: `17.1px`,  
-  left: `12px`,  
-  top: `8px`,  
-});
-  
-const Vector5 = styled("img")({  
-  height: `17.1px`,  
-  width: `17.1px`,  
-  position: `absolute`,  
-  left: `0px`,  
-  top: `0px`,  
+const Vector3 = styled("img")({  
+  height: `7px`,  
+  width: `18.51px`,  
+  margin: `0px`,  
 });
  
 function TarikaFilters(props) {
   return (
     <TarikaFilters1 className={props.className} >
       <TopFiltersAnotherOpt >
-        <Filters >
-          <Status >
-            <Vector  src={VectorImage} alt={"Vector"}/>
-            <StatusAll >
-              {`Status: All`}
-                </StatusAll>
-          </Status>
-          <SearchBy >
-            <Vector1  src={Vector1Image} alt={"Vector"}/>
-            <SearchByAll >
-              {`Search By: All`}
-                </SearchByAll>
-          </SearchBy>
-        </Filters>
-        <Calendar >
-          <Rectangle17155 >
-          </Rectangle17155>
-          <Vector2  src={Vector2Image} alt={"Vector"}/>
-        </Calendar>
-        <Legends >
-          <Rectangle171551 >
-          </Rectangle171551>
-          <Group7279 >
-            <Legend >
-              {`Legend`}
-                </Legend>
-            <Vector3  src={Vector3Image} alt={"Vector"}/>
-          </Group7279>
-        </Legends>
-        <SearchBar >
-          <Rectangle171552 >
-          </Rectangle171552>
-          <SearchWoTitle >
-            {`Search WO#/Title`}
-              </SearchWoTitle>
-          <Group7281 >
-            <Rectangle17156 >
-            </Rectangle17156>
-            <Vector4  src={Vector4Image} alt={"Vector"}/>
-          </Group7281>
-        </SearchBar>
-        <GroupingByMonths >
-          <Rectangle17157  src={Rectangle17157Image} alt={"Rectangle 17157"}/>
-          <GroupingByMonths1 >
-            {`Grouping by Months`}
-              </GroupingByMonths1>
-        </GroupingByMonths>
-        <ResetButton >
-          <Calendar1 >
-            <Rectangle171553 >
-            </Rectangle171553>
-          </Calendar1>
-          <IconAlternateRedo >
-            <Vector5  src={Vector5Image} alt={"Vector"}/>
-          </IconAlternateRedo>
-        </ResetButton>
+        <Frame2 >
+          <Filters >
+            <Frame7 >
+              <StatusAll >
+                {`Status: All`}
+                  </StatusAll>
+              <Vector  src={VectorImage} alt={"Vector"}/>
+            </Frame7>
+            <Frame6 >
+              <SearchByAll >
+                {`Search By: All`}
+                  </SearchByAll>
+              <Vector1  src={Vector1Image} alt={"Vector"}/>
+            </Frame6>
+          </Filters>
+          <Calendar  src={CalendarImage} alt={"Calendar"}/>
+          <SearchBar >
+            <Rectangle17155 >
+            </Rectangle17155>
+            <SearchWoTitle >
+              {`Search WO#/Title`}
+                </SearchWoTitle>
+            <Group7281 >
+              <Rectangle17156 >
+              </Rectangle17156>
+              <Vector2  src={Vector2Image} alt={"Vector"}/>
+            </Group7281>
+          </SearchBar>
+          <ResetButton  src={ResetButtonImage} alt={"Reset Button"}/>
+        </Frame2>
+        <Frame1 >
+          <Frame3 >
+            <Frame4 >
+              <Rectangle17157  src={Rectangle17157Image} alt={"Rectangle 17157"}/>
+              <GroupingByMonths >
+                {`Grouping by Months`}
+                  </GroupingByMonths>
+            </Frame4>
+            <Frame5 >
+              <Legend >
+                {`Legend`}
+                  </Legend>
+              <Vector3  src={Vector3Image} alt={"Vector"}/>
+            </Frame5>
+          </Frame3>
+        </Frame1>
       </TopFiltersAnotherOpt>
     </TarikaFilters1>
   );

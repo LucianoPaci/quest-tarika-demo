@@ -16,13 +16,13 @@ export default function RenderTable({ data }) {
             <TableCell>
               <b>User ID</b>
             </TableCell>
-            <TableCell align="center">
+            <TableCell align="left">
               <b>ID</b>
             </TableCell>
-            <TableCell align="center">
+            <TableCell align="left">
               <b>Title</b>
             </TableCell>
-            <TableCell align="center">
+            <TableCell align="left">
               <b>Body</b>
             </TableCell>
           </TableRow>
@@ -36,9 +36,9 @@ export default function RenderTable({ data }) {
               <TableCell component="th" scope="row">
                 {val.userId}
               </TableCell>
-              <TableCell align="center">{val.id}</TableCell>
-              <TableCell align="center">{val.title}</TableCell>
-              <TableCell align="center">{val.body}</TableCell>
+              <TableCell align="left">{val.id}</TableCell>
+              <TableCell align="left">{val.title}</TableCell>
+              <TableCell align="left">{val.body}</TableCell>
             </TableRow>
           ))}
         </TableBody>
