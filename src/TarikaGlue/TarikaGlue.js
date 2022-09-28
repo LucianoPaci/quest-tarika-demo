@@ -49,6 +49,8 @@ const LeftBar = styled('div')({
 })
 
 const TarikaSideBar1 = styled(TarikaSideBar)(({ theme }) => ({
+  width: `345px`,
+  height: `1073px`,
   margin: `0px`,
 }))
 
@@ -78,12 +80,13 @@ const TarikaWorkOrderList1 = styled(TarikaWorkOrderList)(({ theme }) => ({
 
 const TarikaFilters1 = styled(TarikaFilters)(({ theme }) => ({
   height: `54px`,
-  width: `1622px`,
+  width: `1531px`,
   margin: `0px`,
 }))
 
 const TarikaCenterList1 = styled(TarikaCenterList)(({ theme }) => ({
-  height: `861px`,
+  height: `876px`,
+  width: `1521px`,
   margin: `0px`,
 }))
 
