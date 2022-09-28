@@ -26,7 +26,7 @@ const TarikaGlue1 = styled('div')({
   position: `relative`,
   isolation: `isolate`,
   flexDirection: `row`,
-  width: '100%',
+  width: `1876px`,
   height: `1073px`,
   justifyContent: `flex-start`,
   alignItems: `flex-start`,
@@ -44,7 +44,7 @@ const LeftBar = styled('div')({
   padding: `0px`,
   boxSizing: `border-box`,
   width: `345px`,
-  height: `1080px`,
+  height: `1073px`,
   margin: `0px`,
 })
 
@@ -61,32 +61,29 @@ const RightBar = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  alignSelf: `stretch`,
-  flexGrow: `1`,
+  width: `1531px`,
+  height: `1073px`,
   margin: `0px`,
 })
 
 const TarikaTopBar1 = styled(TarikaTopBar)(({ theme }) => ({
-  height: `98px`,
-  width: `1576px`,
   margin: `0px`,
 }))
 
 const TarikaWorkOrderList1 = styled(TarikaWorkOrderList)(({ theme }) => ({
-  height: `61px`,
-  width: `1586px`,
+  height: `67px`,
+  width: `1531px`,
   margin: `0px`,
 }))
 
 const TarikaFilters1 = styled(TarikaFilters)(({ theme }) => ({
-  height: `94px`,
-  width: `1576px`,
+  height: `54px`,
+  width: `1622px`,
   margin: `0px`,
 }))
 
 const TarikaCenterList1 = styled(TarikaCenterList)(({ theme }) => ({
-  height: `837px`,
-  width: `1586px`,
+  height: `861px`,
   margin: `0px`,
 }))
 
