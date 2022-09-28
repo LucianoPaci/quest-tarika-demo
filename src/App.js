@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import { Outlet, Link, useRoutes } from 'react-router-dom'
 import TarikaGlue from './TarikaGlue/TarikaGlue'
+import LoginScreen from './LoginScreen/LoginScreen'
 
 export default function App() {
   let routes = [
@@ -9,7 +10,7 @@ export default function App() {
       path: '/',
       element: <Layout />,
       children: [
-        { index: true, element: <TarikaGlue /> },
+        { index: true, element: <LoginScreen /> },
         {
           path: '/tickets',
           element: <TarikaGlue />,
