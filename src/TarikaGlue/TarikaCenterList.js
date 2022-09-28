@@ -45,10 +45,6 @@ const LoadingBanner = styled('div')({
 })
 
 function TarikaCenterList(props) {
-  console.log(
-    '🚀 ~ file: TarikaCenterList.js ~ line 30 ~ TarikaCenterList ~ props',
-    props
-  )
   if (props.data.loading) {
     return (
       <LoadingBanner>

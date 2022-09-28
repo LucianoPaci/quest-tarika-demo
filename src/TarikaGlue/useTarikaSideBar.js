@@ -10,14 +10,12 @@
  *
  **********************************************************************/
 
-import { useNavigate, useLocation } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const useTarikaSideBar = () => {
-  const location = useLocation()
   const navigate = useNavigate()
   let data = {}
   const handleNavigation = (path) => {
-    console.log('location.location', location)
     navigate(path, { replace: true })
   }
 

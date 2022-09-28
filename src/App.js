@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Outlet, Link, useRoutes, useParams } from 'react-router-dom'
+import { Outlet, Link, useRoutes } from 'react-router-dom'
 import TarikaGlue from './TarikaGlue/TarikaGlue'
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
       path: '/',
       element: <Layout />,
       children: [
-        { index: true, element: <Home /> },
+        { index: true, element: <TarikaGlue /> },
         {
           path: '/tickets',
           element: <TarikaGlue />,
@@ -42,16 +42,9 @@ export default function App() {
 function Layout() {
   return (
     <>
-      {/* <TarikaSideBar /> */}
-
       <Outlet />
     </>
   )
-}
-
-function Home() {
-  // return <h3>HOLA</h3>
-  return <TarikaGlue />
 }
 
 function NoMatch() {
