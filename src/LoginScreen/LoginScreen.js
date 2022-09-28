@@ -12,21 +12,19 @@
  *
  **********************************************************************/
 
-import BgImage1Image from './assets/images/LoginScreen_BG_Image_1.png'
-import WhitePatternImage from './assets/images/LoginScreen_White_Pattern.png'
-import Ebims1Image from './assets/images/LoginScreen_Ebims_1.png'
-import VectorImage from './assets/images/LoginScreen_Vector_6.png'
-import Vector1Image from './assets/images/LoginScreen_Vector_5.png'
-import Vector2Image from './assets/images/LoginScreen_Vector_4.png'
-import Vector3Image from './assets/images/LoginScreen_Vector_3.png'
-import Rectangle2Image from './assets/images/LoginScreen_Rectangle_2.png'
-import Path2264Image from './assets/images/LoginScreen_Path_2264.png'
-import Rectangle16997Image from './assets/images/LoginScreen_Rectangle_16997.png'
-import Vector4Image from './assets/images/LoginScreen_Vector_2.png'
-import Vector5Image from './assets/images/LoginScreen_Vector_1.png'
-import Vector6Image from './assets/images/LoginScreen_Vector.png'
+import MainBgImage from './assets/images/LoginScreen_Main_BG_1.png'
+import WhitePatternImage from './assets/images/LoginScreen_White_Pattern_1.png'
+import Ebims1Image from './assets/images/LoginScreen_Ebims_1_1.png'
+import VectorImage from './assets/images/LoginScreen_Vector_11.png'
+import Vector1Image from './assets/images/LoginScreen_Vector_10.png'
+import Vector2Image from './assets/images/LoginScreen_Vector_9.png'
+import Vector3Image from './assets/images/LoginScreen_Vector_8.png'
+import Rectangle2Image from './assets/images/LoginScreen_Rectangle_2_1.png'
+import Path2264Image from './assets/images/LoginScreen_Path_2264_1.png'
+import Rectangle16997Image from './assets/images/LoginScreen_Rectangle_16997_1.png'
+import Vector4Image from './assets/images/LoginScreen_Vector_7.png'
+import Vector5Image from './assets/images/LoginScreen_Vector_6.png'
 import { styled } from '@mui/material/styles'
-import UpperBgImage1Image from './assets/images/LoginScreen_Upper_BG_Image_1.png'
 import useLoginScreen from './useLoginScreen'
 
 const LoginScreen1 = styled('div')({
@@ -35,13 +33,26 @@ const LoginScreen1 = styled('div')({
   position: `relative`,
   isolation: `isolate`,
   flexDirection: `row`,
-  width: '100%',
-  height: `1080px`,
+  width: `1746px`,
+  height: `1033px`,
+  justifyContent: `flex-start`,
+  alignItems: `flex-end`,
+  padding: `0px`,
+  boxSizing: `border-box`,
+})
+
+const Frame13 = styled('div')({
+  display: `flex`,
+  position: `relative`,
+  isolation: `isolate`,
+  flexDirection: `row`,
   justifyContent: `flex-start`,
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  overflow: `hidden`,
+  width: `1146px`,
+  height: `1047px`,
+  margin: `0px`,
 })
 
 const LeftSide = styled('div')({
@@ -53,61 +64,45 @@ const LeftSide = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `2470px`,
-  height: `1418px`,
-  left: `-550px`,
-  top: `-137px`,
+  width: `1244.11px`,
+  height: `1047px`,
+  left: `0px`,
+  top: `0px`,
 })
 
-const MainBg = styled('div')({
+const MainBg = styled('img')({
+  height: `1047px`,
+  width: `1244.11px`,
+  position: `absolute`,
+  left: `0px`,
+  top: `0px`,
+})
+
+const Frame12 = styled('div')({
   display: `flex`,
   position: `absolute`,
   isolation: `isolate`,
-  flexDirection: `row`,
+  flexDirection: `column`,
   justifyContent: `flex-start`,
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `2470px`,
-  height: `1418px`,
-  left: `0px`,
-  top: `0px`,
-})
-
-const UpperBgImage1 = styled('div')({
-  backgroundImage: `url(${UpperBgImage1Image})`,
-  backgroundPosition: `center`,
-  backgroundSize: `cover`,
-  backgroundRepeat: `no-repeat`,
-  mixBlendMode: `darken`,
-  width: `2328px`,
-  height: `1418px`,
-  position: `absolute`,
-  left: `0px`,
-  top: `0px`,
-})
-
-const BgImage1 = styled('img')({
-  height: `1080px`,
-  width: `1920px`,
-  position: `absolute`,
-  left: `550px`,
-  top: `137px`,
+  left: `79px`,
+  top: `364px`,
 })
 
 const LeftSideText = styled('div')({
   display: `flex`,
-  position: `absolute`,
+  position: `relative`,
   isolation: `isolate`,
   flexDirection: `row`,
   justifyContent: `flex-start`,
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `947px`,
-  height: `199px`,
-  left: `736px`,
-  top: `577px`,
+  height: `361px`,
+  width: `1136.54px`,
+  margin: `0px`,
 })
 
 const EnterpriseBusinessInSpan1 = styled('span')({
@@ -145,6 +140,8 @@ const EnterpriseBusinessIn = styled('div')({
   letterSpacing: `0px`,
   textDecoration: `none`,
   textTransform: `none`,
+  width: `1136.54px`,
+  height: `145.13px`,
   position: `absolute`,
   left: `0px`,
   top: `0px`,
@@ -185,9 +182,25 @@ const AnEffectiveAllInOneS = styled('div')({
   letterSpacing: `0px`,
   textDecoration: `none`,
   textTransform: `none`,
+  width: `1119.74px`,
+  height: `70.75px`,
   position: `absolute`,
   left: `0px`,
-  top: `160px`,
+  top: `290px`,
+})
+
+const Frame14 = styled('div')({
+  display: `flex`,
+  position: `relative`,
+  isolation: `isolate`,
+  flexDirection: `row`,
+  justifyContent: `flex-start`,
+  alignItems: `flex-start`,
+  padding: `0px`,
+  boxSizing: `border-box`,
+  width: `600px`,
+  height: `1080px`,
+  margin: `0px`,
 })
 
 const RightSide = styled('div')({
@@ -201,7 +214,7 @@ const RightSide = styled('div')({
   boxSizing: `border-box`,
   width: `600px`,
   height: `1080px`,
-  left: `1320px`,
+  left: `0px`,
   top: `0px`,
 })
 
@@ -222,15 +235,15 @@ const EbimsLogo = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `241px`,
-  height: `187px`,
-  left: `180px`,
+  width: `250.9px`,
+  height: `187.35px`,
+  left: `187px`,
   top: `85px`,
 })
 
 const Ebims1 = styled('img')({
-  height: `136px`,
-  width: `241px`,
+  height: `136.25px`,
+  width: `250.9px`,
   objectFit: `cover`,
   position: `absolute`,
   left: `0px`,
@@ -246,9 +259,9 @@ const Group4902 = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `97px`,
-  height: `22px`,
-  left: `72px`,
+  width: `100.99px`,
+  height: `22.04px`,
+  left: `75px`,
   top: `165px`,
 })
 
@@ -263,8 +276,9 @@ const VersionV20 = styled('div')({
   letterSpacing: `0px`,
   textDecoration: `none`,
   textTransform: `none`,
+  width: `69.75px`,
   position: `absolute`,
-  left: `15px`,
+  left: `16px`,
   top: `22px`,
 })
 
@@ -279,6 +293,7 @@ const ClientPortal = styled('div')({
   letterSpacing: `0px`,
   textDecoration: `none`,
   textTransform: `none`,
+  width: `100.99px`,
   position: `absolute`,
   left: `0px`,
   top: `0px`,
@@ -293,10 +308,10 @@ const Form = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `526px`,
-  height: `406px`,
-  left: `37px`,
-  top: `386px`,
+  width: `547.62px`,
+  height: `406.75px`,
+  left: `39px`,
+  top: `387px`,
 })
 
 const Group4905 = styled('div')({
@@ -308,8 +323,8 @@ const Group4905 = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `526px`,
-  height: `243px`,
+  width: `547.62px`,
+  height: `243.45px`,
   left: `0px`,
   top: `0px`,
 })
@@ -323,8 +338,8 @@ const ClientCode = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `526px`,
-  height: `40px`,
+  width: `547.62px`,
+  height: `40.07px`,
   left: `0px`,
   top: `0px`,
 })
@@ -340,14 +355,15 @@ const ClientCode1 = styled('div')({
   letterSpacing: `0px`,
   textDecoration: `none`,
   textTransform: `none`,
+  width: `96.82px`,
   position: `absolute`,
-  left: `48px`,
+  left: `50px`,
   top: `11px`,
 })
 
 const Line57 = styled('div')({
   border: `0.30000001192092896px solid rgba(0, 0, 0, 1)`,
-  width: `526px`,
+  width: `547.62px`,
   height: `0px`,
   position: `absolute`,
   left: `0px`,
@@ -363,23 +379,23 @@ const Group4904 = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `24px`,
-  height: `24px`,
-  left: `2px`,
+  width: `24.83px`,
+  height: `24.04px`,
+  left: `6px`,
   top: `0px`,
 })
 
 const Vector = styled('img')({
-  height: `19.2px`,
-  width: `19.2px`,
+  height: `19.24px`,
+  width: `19.86px`,
   position: `absolute`,
   left: `5px`,
   top: `0px`,
 })
 
 const Vector1 = styled('img')({
-  height: `16.8px`,
-  width: `16.8px`,
+  height: `16.83px`,
+  width: `17.38px`,
   position: `absolute`,
   left: `0px`,
   top: `7px`,
@@ -394,8 +410,8 @@ const UserName = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `526px`,
-  height: `41px`,
+  width: `547.62px`,
+  height: `41.08px`,
   left: `0px`,
   top: `102px`,
 })
@@ -409,9 +425,9 @@ const Group4903 = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `126px`,
-  height: `24px`,
-  left: `2px`,
+  width: `127.68px`,
+  height: `24.04px`,
+  left: `6px`,
   top: `0px`,
 })
 
@@ -426,14 +442,15 @@ const Username = styled('div')({
   letterSpacing: `0px`,
   textDecoration: `none`,
   textTransform: `none`,
+  width: `83.29px`,
   position: `absolute`,
-  left: `46px`,
+  left: `44px`,
   top: `12px`,
 })
 
 const Vector2 = styled('img')({
-  height: `24px`,
-  width: `24px`,
+  height: `24.04px`,
+  width: `24.83px`,
   position: `absolute`,
   left: `0px`,
   top: `0px`,
@@ -441,7 +458,7 @@ const Vector2 = styled('img')({
 
 const Line571 = styled('div')({
   border: `0.30000001192092896px solid rgba(0, 0, 0, 1)`,
-  width: `526px`,
+  width: `547.62px`,
   height: `0px`,
   position: `absolute`,
   left: `0px`,
@@ -457,8 +474,8 @@ const Password = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `526px`,
-  height: `40px`,
+  width: `547.62px`,
+  height: `40.07px`,
   left: `0px`,
   top: `203px`,
 })
@@ -472,8 +489,8 @@ const Group49031 = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `120px`,
-  height: `22px`,
+  width: `124.93px`,
+  height: `22.04px`,
   left: `3px`,
   top: `0px`,
 })
@@ -487,16 +504,16 @@ const FluentKey24Filled = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `22px`,
-  height: `22px`,
+  width: `22.9px`,
+  height: `22.04px`,
   left: `0px`,
   top: `0px`,
   overflow: `hidden`,
 })
 
 const Vector3 = styled('img')({
-  height: `21.67px`,
-  width: `21.77px`,
+  height: `21.71px`,
+  width: `22.67px`,
   position: `absolute`,
   left: `0px`,
   top: `0px`,
@@ -513,14 +530,15 @@ const Password1 = styled('div')({
   letterSpacing: `0px`,
   textDecoration: `none`,
   textTransform: `none`,
+  width: `78.08px`,
   position: `absolute`,
-  left: `45px`,
+  left: `47px`,
   top: `11px`,
 })
 
 const Line572 = styled('div')({
   border: `0.30000001192092896px solid rgba(0, 0, 0, 1)`,
-  width: `526px`,
+  width: `547.62px`,
   height: `0px`,
   position: `absolute`,
   left: `0px`,
@@ -536,10 +554,10 @@ const AdditinalOptions = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `526px`,
-  height: `39px`,
-  left: `0px`,
-  top: `283px`,
+  width: `544.1px`,
+  height: `39.07px`,
+  left: `4px`,
+  top: `284px`,
 })
 
 const ForgotPasswordSpan1 = styled('span')({
@@ -577,9 +595,10 @@ const ForgotPassword = styled('div')({
   letterSpacing: `0px`,
   textDecoration: `none`,
   textTransform: `none`,
-  width: `120.72px`,
+  width: `124.88px`,
+  height: `19.04px`,
   position: `absolute`,
-  left: `405px`,
+  left: `419px`,
   top: `11px`,
 })
 
@@ -592,8 +611,8 @@ const KeepMeLoggedIn = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `185.76px`,
-  height: `39px`,
+  width: `192.15px`,
+  height: `39.07px`,
   left: `0px`,
   top: `0px`,
 })
@@ -609,9 +628,10 @@ const KeepMeLoggedIn1 = styled('div')({
   letterSpacing: `0px`,
   textDecoration: `none`,
   textTransform: `none`,
-  width: `129.34px`,
+  width: `133.8px`,
+  height: `19.04px`,
   position: `absolute`,
-  left: `56px`,
+  left: `58px`,
   top: `11px`,
 })
 
@@ -624,25 +644,25 @@ const Check = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `42.02px`,
-  height: `39px`,
+  width: `43.46px`,
+  height: `39.07px`,
   left: `0px`,
   top: `0px`,
 })
 
 const Rectangle2 = styled('img')({
-  height: `39px`,
-  width: `42.02px`,
+  height: `39.07px`,
+  width: `43.46px`,
   position: `absolute`,
   left: `0px`,
   top: `0px`,
 })
 
 const Path2264 = styled('img')({
-  height: `15.31px`,
-  width: `21.65px`,
+  height: `15.34px`,
+  width: `22.4px`,
   position: `absolute`,
-  left: `9px`,
+  left: `10px`,
   top: `12px`,
 })
 
@@ -655,15 +675,16 @@ const LoginButton = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `150px`,
-  height: `44px`,
+  width: `156.16px`,
+  height: `44.08px`,
   left: `0px`,
-  top: `362px`,
+  top: `363px`,
+  cursor: `pointer`,
 })
 
 const Rectangle16997 = styled('img')({
-  height: `44px`,
-  width: `150px`,
+  height: `44.08px`,
+  width: `156.16px`,
   position: `absolute`,
   left: `0px`,
   top: `0px`,
@@ -681,16 +702,18 @@ const Login = styled('div')({
   letterSpacing: `0px`,
   textDecoration: `none`,
   textTransform: `none`,
+  width: `54.82px`,
+  height: `24.04px`,
   position: `absolute`,
-  left: `20px`,
+  left: `24px`,
   top: `10px`,
 })
 
 const Vector4 = styled('img')({
-  height: `25px`,
-  width: `24.94px`,
+  height: `25.05px`,
+  width: `25.8px`,
   position: `absolute`,
-  left: `88px`,
+  left: `94px`,
   top: `10px`,
 })
 
@@ -703,10 +726,10 @@ const Email = styled('div')({
   alignItems: `flex-start`,
   padding: `0px`,
   boxSizing: `border-box`,
-  width: `190.01px`,
-  height: `12px`,
-  left: `205px`,
-  top: `1035px`,
+  width: `196.55px`,
+  height: `12.02px`,
+  left: `216px`,
+  top: `1037px`,
 })
 
 const SupportTarikagroupCo = styled('div')({
@@ -720,38 +743,15 @@ const SupportTarikagroupCo = styled('div')({
   letterSpacing: `0px`,
   textDecoration: `none`,
   textTransform: `none`,
+  width: `168.61px`,
   position: `absolute`,
-  left: `27px`,
+  left: `28px`,
   top: `4px`,
 })
 
 const Vector5 = styled('img')({
-  height: `12px`,
-  width: `17.01px`,
-  position: `absolute`,
-  left: `0px`,
-  top: `0px`,
-})
-
-const Frame = styled('div')({
-  display: `flex`,
-  position: `absolute`,
-  isolation: `isolate`,
-  flexDirection: `row`,
-  justifyContent: `flex-start`,
-  alignItems: `flex-start`,
-  padding: `0px`,
-  boxSizing: `border-box`,
-  width: `24px`,
-  height: `24px`,
-  left: `1241px`,
-  top: `586px`,
-  overflow: `hidden`,
-})
-
-const Vector6 = styled('img')({
-  height: `24px`,
-  width: `24px`,
+  height: `12.02px`,
+  width: `17.6px`,
   position: `absolute`,
   left: `0px`,
   top: `0px`,
@@ -761,93 +761,93 @@ function LoginScreen(props) {
   const { fns } = useLoginScreen()
   return (
     <LoginScreen1 className={props.className}>
-      <LeftSide>
-        <MainBg>
-          <UpperBgImage1></UpperBgImage1>
-          <BgImage1 src={BgImage1Image} alt={'BG Image 1'} />
-        </MainBg>
-        <LeftSideText>
-          <EnterpriseBusinessIn>
-            <EnterpriseBusinessInSpan1>{`Enterprise Business Information 
+      <Frame13>
+        <LeftSide>
+          <MainBg src={MainBgImage} alt={'Main BG'} />
+          <Frame12>
+            <LeftSideText>
+              <EnterpriseBusinessIn>
+                <EnterpriseBusinessInSpan1>{`Enterprise Business Information 
 `}</EnterpriseBusinessInSpan1>
-            <EnterpriseBusinessInSpan2>{`Management System`}</EnterpriseBusinessInSpan2>
-          </EnterpriseBusinessIn>
-          <AnEffectiveAllInOneS>
-            <AnEffectiveAllInOneSSpan1>{`An effective all-in-one solution for your entire business that streamlines the processes and saves time.
+                <EnterpriseBusinessInSpan2>{`Management System`}</EnterpriseBusinessInSpan2>
+              </EnterpriseBusinessIn>
+              <AnEffectiveAllInOneS>
+                <AnEffectiveAllInOneSSpan1>{`An effective all-in-one solution for your entire business that streamlines the processes and saves time.
 For more information `}</AnEffectiveAllInOneSSpan1>
-            <AnEffectiveAllInOneSSpan2>{`click here`}</AnEffectiveAllInOneSSpan2>
-          </AnEffectiveAllInOneS>
-        </LeftSideText>
-      </LeftSide>
-      <RightSide>
-        <WhitePattern src={WhitePatternImage} alt={'White Pattern'} />
-        <EbimsLogo>
-          <Ebims1 src={Ebims1Image} alt={'Ebims 1'} />
-          <Group4902>
-            <VersionV20>{`Version: v2.0`}</VersionV20>
-            <ClientPortal>{`Client Portal`}</ClientPortal>
-          </Group4902>
-        </EbimsLogo>
-        <Form>
-          <Group4905>
-            <ClientCode>
-              <ClientCode1>{`Client Code`}</ClientCode1>
-              <Line57></Line57>
-              <Group4904>
-                <Vector src={VectorImage} alt={'Vector'} />
-                <Vector1 src={Vector1Image} alt={'Vector'} />
-              </Group4904>
-            </ClientCode>
-            <UserName>
-              <Group4903>
-                <Username>{`Username`}</Username>
-                <Vector2 src={Vector2Image} alt={'Vector'} />
-              </Group4903>
-              <Line571></Line571>
-            </UserName>
-            <Password>
-              <Group49031>
-                <FluentKey24Filled>
-                  <Vector3 src={Vector3Image} alt={'Vector'} />
-                </FluentKey24Filled>
-                <Password1>{`Password`}</Password1>
-              </Group49031>
-              <Line572></Line572>
-            </Password>
-          </Group4905>
-          <AdditinalOptions>
-            <ForgotPassword>
-              <ForgotPasswordSpan1>{`Forgot `}</ForgotPasswordSpan1>
-              <ForgotPasswordSpan2>{`password?`}</ForgotPasswordSpan2>
-            </ForgotPassword>
-            <KeepMeLoggedIn>
-              <KeepMeLoggedIn1>{`Keep me logged in`}</KeepMeLoggedIn1>
-              <Check>
-                <Rectangle2 src={Rectangle2Image} alt={'Rectangle 2'} />
-                <Path2264 src={Path2264Image} alt={'Path 2264'} />
-              </Check>
-            </KeepMeLoggedIn>
-          </AdditinalOptions>
-          <LoginButton>
-            <Rectangle16997
-              onClick={() => fns.handleLogin('/workorders')}
-              src={Rectangle16997Image}
-              alt={'Rectangle 16997'}
-            />
-            <Login>{`LOGIN`}</Login>
-            <Vector4 src={Vector4Image} alt={'Vector'} />
-          </LoginButton>
-        </Form>
-        <Email>
-          <SupportTarikagroupCo>
-            {`support@tarikagroup.com`}
-          </SupportTarikagroupCo>
-          <Vector5 src={Vector5Image} alt={'Vector'} />
-        </Email>
-      </RightSide>
-      <Frame>
-        <Vector6 src={Vector6Image} alt={'Vector'} />
-      </Frame>
+                <AnEffectiveAllInOneSSpan2>{`click here`}</AnEffectiveAllInOneSSpan2>
+              </AnEffectiveAllInOneS>
+            </LeftSideText>
+          </Frame12>
+        </LeftSide>
+      </Frame13>
+      <Frame14>
+        <RightSide>
+          <WhitePattern src={WhitePatternImage} alt={'White Pattern'} />
+          <EbimsLogo>
+            <Ebims1 src={Ebims1Image} alt={'Ebims 1'} />
+            <Group4902>
+              <VersionV20>{`Version: v2.0`}</VersionV20>
+              <ClientPortal>{`Client Portal`}</ClientPortal>
+            </Group4902>
+          </EbimsLogo>
+          <Form>
+            <Group4905>
+              <ClientCode>
+                <ClientCode1>{`Client Code`}</ClientCode1>
+                <Line57></Line57>
+                <Group4904>
+                  <Vector src={VectorImage} alt={'Vector'} />
+                  <Vector1 src={Vector1Image} alt={'Vector'} />
+                </Group4904>
+              </ClientCode>
+              <UserName>
+                <Group4903>
+                  <Username>{`Username`}</Username>
+                  <Vector2 src={Vector2Image} alt={'Vector'} />
+                </Group4903>
+                <Line571></Line571>
+              </UserName>
+              <Password>
+                <Group49031>
+                  <FluentKey24Filled>
+                    <Vector3 src={Vector3Image} alt={'Vector'} />
+                  </FluentKey24Filled>
+                  <Password1>{`Password`}</Password1>
+                </Group49031>
+                <Line572></Line572>
+              </Password>
+            </Group4905>
+            <AdditinalOptions>
+              <ForgotPassword>
+                <ForgotPasswordSpan1>{`Forgot `}</ForgotPasswordSpan1>
+                <ForgotPasswordSpan2>{`password?`}</ForgotPasswordSpan2>
+              </ForgotPassword>
+              <KeepMeLoggedIn>
+                <KeepMeLoggedIn1>{`Keep me logged in`}</KeepMeLoggedIn1>
+                <Check>
+                  <Rectangle2 src={Rectangle2Image} alt={'Rectangle 2'} />
+                  <Path2264 src={Path2264Image} alt={'Path 2264'} />
+                </Check>
+              </KeepMeLoggedIn>
+            </AdditinalOptions>
+            <LoginButton onClick={() => fns.handleLogin('/workorders')}>
+              <Rectangle16997
+                onClick={() => fns.handleLogin('/workorders')}
+                src={Rectangle16997Image}
+                alt={'Rectangle 16997'}
+              />
+              <Login>{`LOGIN`}</Login>
+              <Vector4 src={Vector4Image} alt={'Vector'} />
+            </LoginButton>
+          </Form>
+          <Email>
+            <SupportTarikagroupCo>
+              {`support@tarikagroup.com`}
+            </SupportTarikagroupCo>
+            <Vector5 src={Vector5Image} alt={'Vector'} />
+          </Email>
+        </RightSide>
+      </Frame14>
     </LoginScreen1>
   )
 }
